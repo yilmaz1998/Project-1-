@@ -1,0 +1,89 @@
+body {
+    height: 100%;
+    margin: 0px;
+    background-image: url('pic/istockphoto-1339908748-612x612.jpg');
+}
+
+
+.score-board {
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+    background-color: rgb(0, 166, 255);
+    border-radius: 12px;
+    color: aliceblue;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 20px auto; 
+    box-shadow: 8px 8px 8px #aaa;
+    /* display: none; */
+}
+.score-board .True, .False, .Point {
+    position: absolute;
+}
+
+.question-box {
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    height: 400px;
+    margin-top: 50px;
+    background-color: #0e5f78da;
+    border-radius: 12px;
+    box-shadow: 8px 8px 8px #aaa;
+    /* display: none; */
+}
+.question {
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+    padding-top: 50px;
+    color: aliceblue;
+}
+
+.question-box .options {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+
+}
+
+.question-box button {
+    text-align: center;
+    width: 80%;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 40px;
+}
+
+button:hover {
+    background-color: black;
+    color: aliceblue;
+}
+
+
+
+ body .start-button {
+    width: 20%;
+    height: 100px;
+    background-color: rgb(0, 166, 255);
+    border-radius: 12px;
+    color: aliceblue;
+    font-size: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    box-shadow: 8px 8px 8px #aaa;
+    /* position: absolute;
+    top: 40%;
+    left: 40%; */
+}
+
+.start-button:hover {
+    background-color: black;
+    color: aliceblue;
+}
