@@ -9,26 +9,28 @@
 </head>
 
 <body>
-    <div class="score-board">
+    <div id="score-board">
         <div class="True">True:</div>
-        <div class="Number-of-true">0</div>
+        <div id="Number-of-true">-</div>
         <div class="False">False:</div>
-        <div class="Number-of-false">0</div>
+        <div id="Number-of-false">-</div>
         <div class="Point">Points:</div>
-        <div class="Number-of-points">0</div>
+        <div id="Number-of-points">-</div>
+        <div class="Remain">Remained Questions:</div>
+        <div id="Remained-questions">-</div>
     </div>
-    <div class="question-box">
-        <div class="question">Question</div>
+    <div id="question-box">
+        <div id="question"></div>
         <div class="options">
-            <button type="button" class="Option-A" data-option="A">A</button>
-            <button type="button" class="Option-B" data-option="B">B</button>
-            <button type="button" class="Option-C" data-option="C">C</button>
-            <button type="button" class="Option-D" data-option="D">D</button>
+            <button type="button" id="Option-A" onclick="answered(this)" data-option="A">A</button>
+            <button type="button" id="Option-B" onclick="answered(this)" data-option="B">B</button>
+            <button type="button" id="Option-C" onclick="answered(this)" data-option="C">C</button>
+            <button type="button" id="Option-D" onclick="answered(this)" data-option="D">D</button>
         </div>
     </div>
 
 
-    <button class="start-button">Start Game</button>
+    <button onclick="firstQuestion(0)" id="start-button">Start Game</button>
 
 
 
