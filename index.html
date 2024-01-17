@@ -11,13 +11,13 @@
 <body>
     <div id="score-board">
         <div class="True">True:</div>
-        <div id="Number-of-true">-</div>
+        <div id="Number-of-true">0</div>
         <div class="False">False:</div>
-        <div id="Number-of-false">-</div>
+        <div id="Number-of-false">0</div>
         <div class="Point">Points:</div>
-        <div id="Number-of-points">-</div>
+        <div id="Number-of-points">0</div>
         <div class="Remain">Remained Questions:</div>
-        <div id="Remained-questions">-</div>
+        <div id="Remained-questions">20</div>
     </div>
     <div id="question-box">
         <div id="question"></div>
@@ -30,12 +30,22 @@
     </div>
 
 
+    <div id="game-description"> 
+        <p>Welcome to Quiz Game.
+            Test your knowledge of capital cities. You've got 20 questions. 
+            Each question is 5 points. 
+            At the end you can see your points out of 100. </p>
+    </div>
+
+
     <button onclick="firstQuestion(0)" id="start-button">Start Game</button>
+    <button onclick="returnBack()" id="exit">Exit Game</button>
 
 
 
 
     <script src="script.js"></script>
+    <script src="questions.js"></script>
 </body>
 
 </html>

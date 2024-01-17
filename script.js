@@ -1,22 +1,5 @@
-let questions = [
-{
-    "question": "1)What is the capital city of United States of America?",
-    "A":"New York",
-    "B":"Washington",
-    "C":"Chicago",
-    "D":"Houston",
-    "Answer":"B"
-},
-{
-    "question": "2)What is the capital city of Russia?",
-    "A":"St.Petersburg",
-    "B":"Novgorod",
-    "C":"Moscow",
-    "D":"Krasnodar",
-    "Answer":"C"
-}
-];
-
+let description = document.getElementById("game-description")
+let exitClicked = document.getElementById("exit");
 let startClicked = document.getElementById("start-button");
 let questionSide = document.getElementById("question");
 let answerA = document.getElementById("Option-A");
@@ -29,13 +12,16 @@ let numberOfTrue = 0;
 let numberOfFalse = 0;
 let numberOfPoint = 0;
 let questionNumber = 0;
-let remained = 10;
+let remained = 20;
+
 
 
 function firstQuestion(a){ 
-    // question_box.style.display = "block";
-    // score_board.style.display = "block";
-    // startClicked.style.display = "none";
+    question_box.style.display = "block";
+    score_board.style.display = "block";
+    startClicked.style.display = "none";
+    exitClicked.style.display = "block";
+    description.style.display = "none";
     questionSide.innerHTML = questions[a].question
     answerA.innerHTML = questions[a].A
     answerB.innerHTML = questions[a].B
@@ -56,7 +42,7 @@ function answered(e){
     if (playerChoice === answerOfQuestion){
 
     numberOfTrue++
-    numberOfPoint += 10;
+    numberOfPoint += 5;
     remained--
     score();
     questionNumber++
@@ -73,6 +59,21 @@ function answered(e){
 
 function nextQuestion(){
     firstQuestion(questionNumber);
+}
+
+
+function returnBack (){
+     question_box.style.display = "none";
+    score_board.style.display = "none";
+    startClicked.style.display = "block";
+    exitClicked.style.display = "none";
+    description.style.display = "block"
+     numberOfTrue = 0;
+     numberOfFalse = 0;
+     numberOfPoint = 0;
+     questionNumber = 0;
+     remained = 20;
+     score();     
 }
 
 

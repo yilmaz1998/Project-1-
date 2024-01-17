@@ -18,7 +18,7 @@ body {
     padding-bottom: 10px;
     margin: 20px auto; 
     box-shadow: 8px 8px 8px #aaa;
-    /* display: none; */
+    display: none;
 }
 #score-board .True, .False, .Point, .Remain {
     position: absolute;
@@ -34,7 +34,7 @@ body {
     background-color: #0e5f78da;
     border-radius: 12px;
     box-shadow: 8px 8px 8px #aaa;
-    /* display: none; */
+    display: none;
 }
 #question {
     text-align: center;
@@ -79,12 +79,52 @@ button:hover {
     font-size: 60px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     box-shadow: 8px 8px 8px #aaa;
-    /* position: absolute;
-    top: 40%;
-    left: 40%; */
+    position: absolute;
+    top: 50%;
+    left: 40%;
 }
 
 #start-button:hover {
     background-color: #4B0082;
     color: aliceblue;
+}
+
+
+#exit {
+    width: 10%;
+    height: 90px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    box-shadow: 8px 2px 8px #aaa;
+    position: absolute;
+    bottom: 75%;
+    left: 75%;
+    display: none;
+
+
+}
+
+
+#exit:hover {
+    background-color: #4B0082;
+    color: aliceblue;
+}
+
+
+#game-description {
+    text-align: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #0e5f78da;
+    border-radius: 12px;
+    color: aliceblue;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 80px auto; 
+    box-shadow: 8px 8px 8px #aaa;
 }
