@@ -80,7 +80,7 @@ button:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
     box-shadow: 8px 8px 8px #aaa;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 40%;
 }
 
@@ -127,4 +127,42 @@ button:hover {
     padding-bottom: 10px;
     margin: 80px auto; 
     box-shadow: 8px 8px 8px #aaa;
+}
+
+
+#ok {
+    width: 10%;
+    height: 90px;
+    background-color: aliceblue;
+    border-radius: 12px;
+    color: black;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    box-shadow: 8px 8px 8px #aaa;
+    position: absolute;
+    bottom: 35%;
+    left: 45%;
+    display: none;
+}
+
+#ok:hover {
+    background-color: #4B0082;
+    color: aliceblue;
+}
+
+
+#finish-game {
+    text-align: center;
+    justify-content: center;
+    width: 40%;
+    background-color: #0e5f78da;
+    border-radius: 12px;
+    color: aliceblue;
+    font-size: 70px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 100px auto; 
+    box-shadow: 8px 8px 8px #aaa;
+    display: none;
 }
