@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     <div id="score-board">
-        <div class="True">True:</div>
-        <div id="Number-of-true">0</div>
-        <div class="False">False:</div>
-        <div id="Number-of-false">0</div>
-        <div class="Point">Points:</div>
-        <div id="Number-of-points">0</div>
-        <div class="Remain">Remained Questions:</div>
-        <div id="Remained-questions">20</div>
+        <div class="numberss">
+            <div class="True">True:</div>
+            <div id="Number-of-true">0</div>
+            <div class="False">False:</div>
+            <div id="Number-of-false">0</div>
+            <div class="Point">Points:</div>
+            <div id="Number-of-points">0</div>
+            <div class="Remain">Remained Questions:</div>
+            <div id="Remained-questions">20</div>
+        </div>
+        <div class="timerr">
+            <div class="Time-click">Time:</div>
+            <div id="Time-remain">20</div>
+        </div>
     </div>
+
     <div id="question-box">
         <div id="question"></div>
         <div class="options">
@@ -30,17 +38,19 @@
     </div>
 
 
-    <div id="game-description"> 
-        <p>Welcome to Quiz Game.
-            Test your knowledge of capital cities. You've got 20 questions. 
-            Each question is 5 points. 
-            At the end, you can see your points out of 100. </p>
+    <div id="game-description">
+        <ul>
+            <P>WELCOME TO QUIZ GAME.</P>
+            <li>Test your knowledge of capital cities. You've got 20 questions. </li>
+            <li>Each question is 5 points. You have 20 seconds for each question.</li>
+            <li>At the end, you can see your points out of 100. </li>
+        </ul>
     </div>
 
     <div id="finish-game"></div>
 
     <button onclick="firstQuestion(0)" id="start-button">Start Game</button>
-    <button onclick="exitGame()" id="exit">Exit Game</button>
+    <button onclick="exitGame()" id="exit">Quit Game</button>
     <button onclick="returnBack()" id="ok">Quit</button>
 
 
