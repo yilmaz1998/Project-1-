@@ -1,10 +1,12 @@
 <h1>Welcome to my first project. (QUIZ GAME) </h1> 
 <p>I chose to create a quiz game about the capital cities.</p>
 <h2>This is the first page</h2>
-<img width="1792" alt="Screenshot 2024-01-18 at 4 54 19 PM" src="https://github.com/yilmaz1998/Project-1/assets/152319088/f2a6b2d0-afa6-4ae2-b0d3-628bc3450647">
+<img width="1792" alt="Screenshot 2024-01-22 at 10 41 56 PM" src="https://github.com/yilmaz1998/Project-1/assets/152319088/40d00e0c-c427-4c6e-a319-e139cc8aabb1">
+
 
 <h2>This is how main page looks like</h2>
-<img width="1792" alt="Screenshot 2024-01-18 at 4 54 44 PM" src="https://github.com/yilmaz1998/Project-1/assets/152319088/4ea066b9-7921-4a46-bea4-63054a4664e0">
+<img width="1792" alt="Screenshot 2024-01-22 at 10 42 05 PM" src="https://github.com/yilmaz1998/Project-1/assets/152319088/304f0844-455a-474d-ae68-952fa0b46ff7">
+
 
 <h1>About the game</h1>
 <p>This is very easy game. This game is very convenient for testing your knowledge about the most famous countries' capital cities.
@@ -26,4 +28,5 @@ On the other hand, when you quit or finish the game, you will see the descriptio
   <li>HTML</li>
   <li>CSS</li>
   <li>Some youtubers(SuperSimpleDev, Brian Design, Web Dev Simplified )</li>
+  <li>For sweet alert; "https://sweetalert2.github.io/"</li>
 </ul>
