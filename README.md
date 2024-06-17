@@ -1,5 +1,7 @@
 <h1>Welcome to my first project. (QUIZ GAME) </h1> 
 <p>I chose to create a quiz game about the capital cities.</p>
+
+<a href="https://yilmaz1998.github.io/Project-1-QuizGame/">Click to play</a>
 <h2>This is the first page</h2>
 <img width="1792" alt="Screenshot 2024-01-22 at 10 41 56 PM" src="https://github.com/yilmaz1998/Project-1/assets/152319088/40d00e0c-c427-4c6e-a319-e139cc8aabb1">
 
