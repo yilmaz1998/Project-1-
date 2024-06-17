@@ -1,18 +1,20 @@
 body {
     height: 100%;
     margin: 0px;
-    background-image: url('pic/istockphoto-1339908748-612x612.jpg');
+    background: rgb(95,91,153);
+    background: linear-gradient(90deg, rgba(95,91,153,1) 0%, rgba(20,34,85,0.6979385504201681) 40%, rgba(83,25,90,0.894016981792717) 71%, rgba(54,20,85,0.821187850140056) 95%);
     min-width: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 
 #score-board {
     height: 150px;
-    width: 30%;
+    width: 90%;
+    max-width: 600px;
     background-color: #0e5f78da;
     border-radius: 12px;
     color: aliceblue;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     padding-top: 20px;
     padding-bottom: 10px;
     margin: 40px auto; 
@@ -21,7 +23,7 @@ body {
 }
 
 #question-box {
-    width: 70%;
+    width: 80%;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -36,7 +38,6 @@ body {
     text-align: center;
     justify-content: center;
     font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100px;
     padding-top: 75px;
     color: aliceblue;
@@ -54,7 +55,6 @@ body {
     text-align: center;
     width: 80%;
     font-size: larger;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 40px;
     border-radius: 12px;
 }
@@ -67,18 +67,14 @@ button:hover {
 
 
 
- body #start-button {
+ #start-button {
     width: 20%;
-    height: 100px;
-    background-color: aliceblue;
-    border-radius: 12px;
-    color: black;
-    font-size: 60px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    height: 50px;
+    font-size: larger;
     box-shadow: 8px 8px 8px #aaa;
-    position: absolute;
-    top: 50%;
-    left: 40%;
+    border-radius: 12px;
+    margin-top: 30px;
+    margin-left: 40%;
 }
 
 #start-button:hover {
@@ -87,22 +83,15 @@ button:hover {
     transition: 0.5s;
 }
 
-
 #exit {
-    width: 10%;
-    height: 90px;
-    background-color: aliceblue;
+    margin: auto;
+    width: 20%;
+    height: 50px;
+    margin-top: 30px;
+    font-size: larger;
+    box-shadow: 8px 8px 8px #aaa;
     border-radius: 12px;
-    color: black;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
-    box-shadow: 8px 2px 8px #aaa;
-    position: absolute;
-    bottom: 73%;
-    left: 75%;
     display: none;
-
-
 }
 
 
@@ -120,60 +109,55 @@ button:hover {
     background-color: #0e5f78da;
     border-radius: 12px;
     color: aliceblue;
-    font-size: 32px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
-    margin: 110px auto; 
+    margin: auto; 
+    margin-top: 100px;
     box-shadow: 8px 8px 8px #aaa;
 }
 
 
 #ok {
-    width: 10%;
-    height: 90px;
-    background-color: aliceblue;
-    border-radius: 12px;
-    color: black;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    margin: auto;
+    width: 20%;
+    height: 50px;
+    margin-top: 30px;
+    font-size: larger;
     box-shadow: 8px 8px 8px #aaa;
-    position: absolute;
-    bottom: 35%;
-    left: 45%;
+    border-radius: 12px;
     display: none;
 }
 
 #ok:hover {
     background-color: #4B0082;
     color: aliceblue;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 
 #finish-game {
     text-align: center;
     justify-content: center;
-    width: 40%;
+    width: 45%;
     background-color: #0e5f78da;
     border-radius: 12px;
     color: aliceblue;
-    font-size: 70px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
     padding-top: 20px;
     padding-bottom: 10px;
-    margin: 100px auto; 
+    margin: auto; 
+    margin-top: 100px;
     box-shadow: 8px 8px 8px #aaa;
     display: none;
 }
 
 
 .swal2-popup {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0e5f78da;
     color: aliceblue;
     box-shadow: 8px 8px 8px #aaa;
-    width: 30%;
+    width: 50%;
 }
 
 .timerr {
@@ -202,4 +186,25 @@ button:hover {
 .True, .False, .Point, .Remain {
     text-align: left;
     position: absolute;
+}
+
+@media only screen and (max-width: 500px) {
+    #score-board {
+        height: 20%;
+    }
+    #Remained-questions {
+        margin-top: 32px;
+    }
+    #game-description {
+        width: 90%;
+    }
+    #start-button {
+        width: 25%;
+    }
+    #exit {
+        width: 60%;
+    }
+    #ok {
+        width: 40%;
+    } 
 }
