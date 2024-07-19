@@ -71,6 +71,8 @@ button:hover {
     width: 20%;
     height: 50px;
     font-size: larger;
+    color: black;
+    border: 2px solid black;
     box-shadow: 8px 8px 8px #aaa;
     border-radius: 12px;
     margin-top: 30px;
@@ -92,6 +94,8 @@ button:hover {
     box-shadow: 8px 8px 8px #aaa;
     border-radius: 12px;
     display: none;
+    color: black;
+    border: 2px solid black;
 }
 
 
@@ -127,6 +131,8 @@ button:hover {
     box-shadow: 8px 8px 8px #aaa;
     border-radius: 12px;
     display: none;
+    color: black;
+    border: 2px solid black;
 }
 
 #ok:hover {
@@ -188,6 +194,16 @@ button:hover {
     position: absolute;
 }
 
+#Option-A, #Option-B, #Option-C, #Option-D {
+    color: black;
+    border: 2px solid black;
+    margin: 1px;
+}
+
+#Option-A:hover, #Option-B:hover, #Option-C:hover, #Option-D:hover {
+    color: aliceblue;
+}
+
 @media only screen and (max-width: 500px) {
     #score-board {
         height: 20%;
@@ -202,9 +218,9 @@ button:hover {
         width: 25%;
     }
     #exit {
-        width: 60%;
+        width: 50%;
     }
     #ok {
         width: 40%;
-    } 
+    }
 }
