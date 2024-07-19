@@ -21,7 +21,7 @@ let timeTicking = 20;
 score_board.style.display = "none";
 
 function startTimer(e){
-    timer = setInterval(time , 10000000);
+    timer = setInterval(time , 1000);
     function time() {
         timeGoes.textContent = e;
         e--;

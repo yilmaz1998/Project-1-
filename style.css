@@ -57,15 +57,8 @@ body {
     font-size: larger;
     height: 40px;
     border-radius: 12px;
+    transition: background-color 0.2s, color 0.2s;
 }
-
-button:hover {
-    background-color: #4B0082;
-    color: aliceblue;
-    transition: 0.3s;
-}
-
-
 
  #start-button {
     width: 20%;
@@ -200,19 +193,26 @@ button:hover {
     margin: 1px;
 }
 
-#Option-A:hover, #Option-B:hover, #Option-C:hover, #Option-D:hover {
+#question-box .options button:active {
     color: aliceblue;
+    background-color: #4B0082;
 }
 
 @media only screen and (max-width: 500px) {
     #score-board {
         height: 20%;
     }
-    #Remained-questions {
-        margin-top: 32px;
+    #score-board .numberss {
+        font-size: 20px;
+    }
+    .Time-click {
+        font-size: 20px;
     }
     #game-description {
         width: 90%;
+    }
+    #game-description p {
+        font-size: 20px;
     }
     #start-button {
         width: 25%;
@@ -222,5 +222,8 @@ button:hover {
     }
     #ok {
         width: 40%;
+    }
+    #question {
+        padding-top: 30px;
     }
 }
